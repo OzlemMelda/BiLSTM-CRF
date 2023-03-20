@@ -47,3 +47,28 @@ crf.py:
   
 # Example command line to execute an experiment
 python main.py --dataset GMB --epoch 50 --use_crf True
+
+# Experiment Results
+- I conducted experiments with or without Glove word embeddings and utilized BiLSTM
+and BiLSTM + CRF models for NER, comparing their performance to the CRF model.
+
+- The objective is to design and implement a model for named-entity recognition (NER) task that
+can achieve high performance on two provided datasets - GMB and WNUT-16. 
+
+- The pre-trained Glove embeddings are utilized to convert the natural language data into
+a numerical representation. I train and compare the performance of the
+models with and without pre-trained Glove embedding on the two datasets. 
+
+- The evaluation metric for the model is the F1 score.
+
+- Pre-trained embeddings definitely help the model understand the words and improve the performance as can be seen from F1
+scores. When we used pre-trained embeddings, the performance of the
+model increased for both wnut16 and GMB dataset. We also see performance increase after we add CRF to BiLSTM model. It’s because CRF is
+used to improve the result of BiLSTM by imposing adjacency constraints
+on neighboring elements in the sequence.
+
+![image](https://user-images.githubusercontent.com/53811688/226488864-ce2d9c50-79b4-4bd8-97bc-fc2a7c878ecc.png)
+
+![image](https://user-images.githubusercontent.com/53811688/226488905-aacec458-c405-417e-a1f5-d49e45e91c6e.png)
+
+*w/o means without pre-trained embedding
