@@ -72,3 +72,14 @@ on neighboring elements in the sequence.
 ![image](https://user-images.githubusercontent.com/53811688/226488905-aacec458-c405-417e-a1f5-d49e45e91c6e.png)
 
 *w/o means without pre-trained embedding
+
+- Explanation of WNUT-16 having low F1 score would be this: 
+  - Inspecting the counts of each entity tag and the unique,
+  top-frequency words, I conclude that many entity tags have many unique
+  words in wnut16. 
+  - It means that the terms have more variety. 
+  - This makes model training harder and affects model performance in a bad way since
+  we may not have enough instances to learn the entity tags.
+  
+  WNUT-16:
+  ![image](https://user-images.githubusercontent.com/53811688/226489312-b11a4f45-e64c-4a76-a28c-58f775cd538d.png)
