@@ -2,7 +2,7 @@
 Experiment with three different models: conditional random field (CRF), bidirectional long short-term memory (BiLSTM), and a combination of the two, and their performances on two named entity recognition (NER) datasets.
 
 # File Descriptions
-ner:
+Data/ner:
   The data files for the Named Entity Recognition task.
   It contains the two folders:
   - GMB
@@ -14,7 +14,7 @@ ner:
     - dev
     - test
 
-src:
+Data/src:
   You need to download the pre-trained word embeddings from
   https://nlp.stanford.edu/projects/glove/
   and put them in this folder.
