@@ -1,0 +1,10 @@
+processed 251715 tokens with 27523 phrases; found: 27573 phrases; correct: 22039.
+accuracy:  95.96%; precision:  79.93%; recall:  80.07%; FB1:  80.00
+              ART: precision:  17.95%; recall:  15.73%; FB1:  16.77  78
+              EVE: precision:  23.88%; recall:  21.62%; FB1:  22.70  67
+              GEO: precision:  82.39%; recall:  85.84%; FB1:  84.08  9654
+              GPE: precision:  93.56%; recall:  94.43%; FB1:  93.99  3804
+              NAT: precision:  28.12%; recall:  24.32%; FB1:  26.09  32
+              ORG: precision:  64.04%; recall:  59.64%; FB1:  61.76  4628
+              PER: precision:  74.77%; recall:  74.26%; FB1:  74.51  4260
+              TIM: precision:  85.90%; recall:  86.26%; FB1:  86.08  5050
